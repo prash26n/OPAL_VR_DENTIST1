@@ -1,0 +1,529 @@
+fileFormatVersion: 2
+guid: a17910d17395d8a4a92033cbf9d7a931
+ModelImporter:
+  serializedVersion: 22
+  fileIDToRecycleName:
+    100000: container_1
+    100002: container_10
+    100004: container_11
+    100006: container_12
+    100008: container_13
+    100010: container_14
+    100012: container_15
+    100014: container_16
+    100016: container_17
+    100018: container_18
+    100020: container_19
+    100022: container_2
+    100024: container_20
+    100026: container_21
+    100028: container_22
+    100030: container_23
+    100032: container_24
+    100034: container_25
+    100036: container_26
+    100038: container_27
+    100040: container_28
+    100042: container_29
+    100044: container_3
+    100046: container_30
+    100048: container_31
+    100050: container_32
+    100052: container_33
+    100054: container_4
+    100056: container_5
+    100058: container_6
+    100060: container_7
+    100062: container_8
+    100064: container_9
+    100066: dental chair
+    100068: dental chair_1
+    100070: dental chair_2
+    100072: dental chair_3
+    100074: dental chair_small
+    100076: dental table
+    100078: dental table 1
+    100080: dental_device
+    100082: fabric
+    100084: glass
+    100086: Loft01
+    100088: medical tool_1
+    100090: medical tool_10
+    100092: medical tool_11
+    100094: medical tool_12
+    100096: medical tool_13
+    100098: medical tool_14
+    100100: medical tool_15
+    100102: medical tool_16
+    100104: medical tool_17
+    100106: medical tool_18
+    100108: medical tool_19
+    100110: medical tool_2
+    100112: medical tool_3
+    100114: medical tool_4
+    100116: medical tool_5
+    100118: medical tool_6
+    100120: medical tool_7
+    100122: medical tool_8
+    100124: medical tool_9
+    100126: //RootNode
+    100128: X-ray
+    100130: dental chair_1_MeshPart0
+    100132: dental chair_1_MeshPart1
+    100134: dental chair_1_MeshPart2
+    100136: X-ray_MeshPart0
+    100138: X-ray_MeshPart1
+    400000: container_1
+    400002: container_10
+    400004: container_11
+    400006: container_12
+    400008: container_13
+    400010: container_14
+    400012: container_15
+    400014: container_16
+    400016: container_17
+    400018: container_18
+    400020: container_19
+    400022: container_2
+    400024: container_20
+    400026: container_21
+    400028: container_22
+    400030: container_23
+    400032: container_24
+    400034: container_25
+    400036: container_26
+    400038: container_27
+    400040: container_28
+    400042: container_29
+    400044: container_3
+    400046: container_30
+    400048: container_31
+    400050: container_32
+    400052: container_33
+    400054: container_4
+    400056: container_5
+    400058: container_6
+    400060: container_7
+    400062: container_8
+    400064: container_9
+    400066: dental chair
+    400068: dental chair_1
+    400070: dental chair_2
+    400072: dental chair_3
+    400074: dental chair_small
+    400076: dental table
+    400078: dental table 1
+    400080: dental_device
+    400082: fabric
+    400084: glass
+    400086: Loft01
+    400088: medical tool_1
+    400090: medical tool_10
+    400092: medical tool_11
+    400094: medical tool_12
+    400096: medical tool_13
+    400098: medical tool_14
+    400100: medical tool_15
+    400102: medical tool_16
+    400104: medical tool_17
+    400106: medical tool_18
+    400108: medical tool_19
+    400110: medical tool_2
+    400112: medical tool_3
+    400114: medical tool_4
+    400116: medical tool_5
+    400118: medical tool_6
+    400120: medical tool_7
+    400122: medical tool_8
+    400124: medical tool_9
+    400126: //RootNode
+    400128: X-ray
+    400130: dental chair_1_MeshPart0
+    400132: dental chair_1_MeshPart1
+    400134: dental chair_1_MeshPart2
+    400136: X-ray_MeshPart0
+    400138: X-ray_MeshPart1
+    2100000: plastic black
+    2100002: chrom
+    2100004: seat
+    2100006: button_1
+    2100008: plastic white
+    2100010: button_2
+    2100012: metall blue
+    2100014: metall grey
+    2100016: glass
+    2100018: mirror
+    2100020: glass_lamp
+    2100022: light
+    2100024: white hose smooth
+    2100026: white hose channeled
+    2100028: box metall
+    2100030: bottle_2
+    2100032: bottle_1
+    2100034: bottle_3
+    2100036: bottle_5
+    2100038: bottle_4
+    2100040: bottle_6
+    2100042: tools_chrom_1
+    2100044: tools_mirror
+    2100046: tools_chrom_2
+    2100048: bottle_small_1
+    2100050: bottle_small_3
+    2100052: bottle_small_5
+    2100054: bottle_small_4
+    2100056: bottle_small_2
+    2100058: black
+    2100060: light_2
+    2100062: "\u0431\u0435\u043B\u0430\u044F \u0431\u0430\u043D\u043A\u0430"
+    2100064: bottle_small_6
+    2100066: containe2
+    2100068: container_1
+    2100070: "\u0442\u0430\u043C\u043F\u043E\u043D"
+    2100072: fabric
+    2300000: container_1
+    2300002: container_10
+    2300004: container_11
+    2300006: container_12
+    2300008: container_13
+    2300010: container_14
+    2300012: container_15
+    2300014: container_16
+    2300016: container_17
+    2300018: container_18
+    2300020: container_19
+    2300022: container_2
+    2300024: container_20
+    2300026: container_21
+    2300028: container_22
+    2300030: container_23
+    2300032: container_24
+    2300034: container_25
+    2300036: container_26
+    2300038: container_27
+    2300040: container_28
+    2300042: container_29
+    2300044: container_3
+    2300046: container_30
+    2300048: container_31
+    2300050: container_32
+    2300052: container_33
+    2300054: container_4
+    2300056: container_5
+    2300058: container_6
+    2300060: container_7
+    2300062: container_8
+    2300064: container_9
+    2300066: dental chair_1
+    2300068: dental chair_2
+    2300070: dental chair_3
+    2300072: dental chair_small
+    2300074: dental table 1
+    2300076: dental_device
+    2300078: fabric
+    2300080: glass
+    2300082: Loft01
+    2300084: medical tool_1
+    2300086: medical tool_10
+    2300088: medical tool_11
+    2300090: medical tool_12
+    2300092: medical tool_13
+    2300094: medical tool_14
+    2300096: medical tool_15
+    2300098: medical tool_16
+    2300100: medical tool_17
+    2300102: medical tool_18
+    2300104: medical tool_19
+    2300106: medical tool_2
+    2300108: medical tool_3
+    2300110: medical tool_4
+    2300112: medical tool_5
+    2300114: medical tool_6
+    2300116: medical tool_7
+    2300118: medical tool_8
+    2300120: medical tool_9
+    2300122: X-ray
+    2300124: dental chair_1_MeshPart0
+    2300126: dental chair_1_MeshPart1
+    2300128: dental chair_1_MeshPart2
+    2300130: X-ray_MeshPart0
+    2300132: X-ray_MeshPart1
+    3300000: container_1
+    3300002: container_10
+    3300004: container_11
+    3300006: container_12
+    3300008: container_13
+    3300010: container_14
+    3300012: container_15
+    3300014: container_16
+    3300016: container_17
+    3300018: container_18
+    3300020: container_19
+    3300022: container_2
+    3300024: container_20
+    3300026: container_21
+    3300028: container_22
+    3300030: container_23
+    3300032: container_24
+    3300034: container_25
+    3300036: container_26
+    3300038: container_27
+    3300040: container_28
+    3300042: container_29
+    3300044: container_3
+    3300046: container_30
+    3300048: container_31
+    3300050: container_32
+    3300052: container_33
+    3300054: container_4
+    3300056: container_5
+    3300058: container_6
+    3300060: container_7
+    3300062: container_8
+    3300064: container_9
+    3300066: dental chair_1
+    3300068: dental chair_2
+    3300070: dental chair_3
+    3300072: dental chair_small
+    3300074: dental table 1
+    3300076: dental_device
+    3300078: fabric
+    3300080: glass
+    3300082: Loft01
+    3300084: medical tool_1
+    3300086: medical tool_10
+    3300088: medical tool_11
+    3300090: medical tool_12
+    3300092: medical tool_13
+    3300094: medical tool_14
+    3300096: medical tool_15
+    3300098: medical tool_16
+    3300100: medical tool_17
+    3300102: medical tool_18
+    3300104: medical tool_19
+    3300106: medical tool_2
+    3300108: medical tool_3
+    3300110: medical tool_4
+    3300112: medical tool_5
+    3300114: medical tool_6
+    3300116: medical tool_7
+    3300118: medical tool_8
+    3300120: medical tool_9
+    3300122: X-ray
+    3300124: dental chair_1_MeshPart0
+    3300126: dental chair_1_MeshPart1
+    3300128: dental chair_1_MeshPart2
+    3300130: X-ray_MeshPart0
+    3300132: X-ray_MeshPart1
+    4300000: dental chair_small
+    4300002: dental chair_1
+    4300004: dental chair_2
+    4300006: container_1
+    4300008: container_2
+    4300010: container_3
+    4300012: container_4
+    4300014: container_5
+    4300016: medical tool_1
+    4300018: container_9
+    4300020: container_6
+    4300022: container_7
+    4300024: container_8
+    4300026: dental chair_3
+    4300028: Loft01
+    4300030: X-ray
+    4300032: container_28
+    4300034: container_27
+    4300036: container_12
+    4300038: container_20
+    4300040: container_19
+    4300042: container_13
+    4300044: container_10
+    4300046: container_11
+    4300048: container_21
+    4300050: container_24
+    4300052: glass
+    4300054: container_29
+    4300056: container_30
+    4300058: container_31
+    4300060: container_22
+    4300062: container_26
+    4300064: container_25
+    4300066: medical tool_2
+    4300068: container_23
+    4300070: container_18
+    4300072: container_17
+    4300074: container_16
+    4300076: container_15
+    4300078: container_14
+    4300080: medical tool_17
+    4300082: container_33
+    4300084: dental_device
+    4300086: medical tool_7
+    4300088: medical tool_8
+    4300090: medical tool_9
+    4300092: medical tool_11
+    4300094: medical tool_10
+    4300096: medical tool_6
+    4300098: medical tool_5
+    4300100: medical tool_4
+    4300102: medical tool_3
+    4300104: container_32
+    4300106: medical tool_19
+    4300108: medical tool_15
+    4300110: medical tool_16
+    4300112: medical tool_12
+    4300114: medical tool_14
+    4300116: medical tool_13
+    4300118: medical tool_18
+    4300120: fabric
+    4300122: dental table
+    4300124: dental chair_1_MeshPart0
+    4300126: dental chair_1_MeshPart1
+    4300128: dental chair_1_MeshPart2
+    4300130: X-ray_MeshPart0
+    4300132: X-ray_MeshPart1
+    6400000: container_1
+    6400002: container_10
+    6400004: container_11
+    6400006: container_12
+    6400008: container_13
+    6400010: container_14
+    6400012: container_15
+    6400014: container_16
+    6400016: container_17
+    6400018: container_18
+    6400020: container_19
+    6400022: container_2
+    6400024: container_20
+    6400026: container_21
+    6400028: container_22
+    6400030: container_23
+    6400032: container_24
+    6400034: container_25
+    6400036: container_26
+    6400038: container_27
+    6400040: container_28
+    6400042: container_29
+    6400044: container_3
+    6400046: container_30
+    6400048: container_31
+    6400050: container_32
+    6400052: container_33
+    6400054: container_4
+    6400056: container_5
+    6400058: container_6
+    6400060: container_7
+    6400062: container_8
+    6400064: container_9
+    6400066: dental chair_1
+    6400068: dental chair_2
+    6400070: dental chair_3
+    6400072: dental chair_small
+    6400074: dental table 1
+    6400076: dental_device
+    6400078: fabric
+    6400080: glass
+    6400082: Loft01
+    6400084: medical tool_1
+    6400086: medical tool_10
+    6400088: medical tool_11
+    6400090: medical tool_12
+    6400092: medical tool_13
+    6400094: medical tool_14
+    6400096: medical tool_15
+    6400098: medical tool_16
+    6400100: medical tool_17
+    6400102: medical tool_18
+    6400104: medical tool_19
+    6400106: medical tool_2
+    6400108: medical tool_3
+    6400110: medical tool_4
+    6400112: medical tool_5
+    6400114: medical tool_6
+    6400116: medical tool_7
+    6400118: medical tool_8
+    6400120: medical tool_9
+    6400122: X-ray
+    6400124: dental chair_1_MeshPart0
+    6400126: dental chair_1_MeshPart1
+    6400128: dental chair_1_MeshPart2
+    6400130: X-ray_MeshPart0
+    6400132: X-ray_MeshPart1
+    9500000: //RootNode
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
