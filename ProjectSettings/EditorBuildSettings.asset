@@ -6,6 +6,9 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Scenes/0 Tutorial.unity
+    guid: d1686faf3ef922f4d98b8ef6995059af
+  - enabled: 1
     path: Assets/Scenes/2 X Ray Room.unity
     guid: 025c523aca4cbc144a5f72a7ced90169
   - enabled: 1
