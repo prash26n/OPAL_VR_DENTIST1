@@ -27,6 +27,7 @@ public static class GlobalVariables
     //Sample rate for records in patient file
     private static float sampleRate = 2.0f; 
 
+    
     //How long anxiety level needs to be below threshold before transitioning to next scene.
     private static int timeTillNextScene = 5;
 
@@ -59,6 +60,8 @@ public static class GlobalVariables
 
     //value of slider
     public static float sliderValue = 0f;
+
+    
     //call GlobalVariables.Filename to return path+filename
     public static string Filename 
     {
