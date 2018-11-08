@@ -9,14 +9,14 @@ EditorBuildSettings:
     path: Assets/Scenes/0 Tutorial.unity
     guid: d1686faf3ef922f4d98b8ef6995059af
   - enabled: 1
+    path: Assets/Scenes/1 Reception.unity
+    guid: 014fedae67e04524b97f9d290cdb2b39
+  - enabled: 1
     path: Assets/Scenes/2 X Ray Room.unity
     guid: 025c523aca4cbc144a5f72a7ced90169
-  - enabled: 1
-    path: Assets/Scenes/1 Reception.unity
-    guid: 4db9a27442d0524498d7408a9c0d2217
   - enabled: 1
     path: Assets/Scenes/3 Dentist Room.unity
     guid: be8e62ce82b5c7b4db1847e4e4cdebe9
   - enabled: 1
     path: Assets/Scenes/4 Patient.unity
-    guid: c93708e39f0b1b24c8fe364304b13816
+    guid: 2b8a40c9b74424c47a976834d6a95561
