@@ -5984,7 +5984,7 @@ MonoBehaviour:
   tutorialSphere: {fileID: 607221789}
   threshold: 20
   canvas: {fileID: 775433558}
-  sliderText: {fileID: 2085522171}
+  sliderText: {fileID: 1261974555}
   slider: {fileID: 1169950799}
   maxValue: 100
   minValue: 0
