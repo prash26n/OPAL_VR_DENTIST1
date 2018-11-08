@@ -163,7 +163,62 @@ ModelImporter:
     13700000: Object006
     13700002: Object007
     13700004: st_Model_1
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 15 - Default
+    second: {fileID: 2100012, guid: 69c9464bf287322418e6a6c990b00c77, type: 3}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 24 - Default
+    second: {fileID: 2100004, guid: 69c9464bf287322418e6a6c990b00c77, type: 3}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 3_SkinArm
+    second: {fileID: 2100016, guid: 081873753d908204a947511052f8ae97, type: 3}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 3_SkinArmd
+    second: {fileID: 2100010, guid: 081873753d908204a947511052f8ae97, type: 3}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 'Material #2106d'
+    second: {fileID: 2100006, guid: 69c9464bf287322418e6a6c990b00c77, type: 3}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 'Material #2106ddg'
+    second: {fileID: 2100008, guid: 69c9464bf287322418e6a6c990b00c77, type: 3}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 'Material #2111'
+    second: {fileID: 2100002, guid: 081873753d908204a947511052f8ae97, type: 3}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 'Material #2112'
+    second: {fileID: 2100000, guid: 081873753d908204a947511052f8ae97, type: 3}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 'Material #2128572861'
+    second: {fileID: 2100018, guid: 081873753d908204a947511052f8ae97, type: 3}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 'Material #2128572862'
+    second: {fileID: 2100020, guid: 081873753d908204a947511052f8ae97, type: 3}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: bodyShape_skin_Shape_mdso
+    second: {fileID: 2100014, guid: 69c9464bf287322418e6a6c990b00c77, type: 3}
   materials:
     importMaterials: 1
     materialName: 0
