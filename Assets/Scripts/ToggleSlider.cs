@@ -94,8 +94,7 @@ public class ToggleSlider : MonoBehaviour {
 
 
 	// Use this for initialization
-	void Start () {
-		scene = SceneManager.GetActiveScene();		
+	void Start () {	
 		slider.value = 50;
 		belowThresholdTutorial	= true;
 	}
