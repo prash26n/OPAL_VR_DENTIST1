@@ -73,7 +73,6 @@ public class ToggleSlider : MonoBehaviour {
 			val = maxValue;
 		}
 		sliderText.text = val.ToString();
-        Debug.Log(sliderText.text);
         slider.value = val;
 		isActive = true;
 	}
@@ -87,7 +86,6 @@ public class ToggleSlider : MonoBehaviour {
 			val = minValue;
 		}
 		sliderText.text = val.ToString();
-        Debug.Log(sliderText.text);
         slider.value = val;
 		isActive = true;
 	}
@@ -160,7 +158,9 @@ public class ToggleSlider : MonoBehaviour {
 			}
 		}
 		else if(stepTwo){
-			if(tutorialSphere.isKinematic){
+            Debug.Log(tutorialSphere.transform.position);
+
+            if (tutorialSphere.isKinematic){
 				tutorialCanvas1.SetActive(false);
 				tutorialCanvas2.SetActive(false);
 				tutorialCanvas3.SetActive(true);
@@ -172,6 +172,7 @@ public class ToggleSlider : MonoBehaviour {
 		if(TutorialDone){
 			if(val <= 0){
 				GlobalVariables.tutorialDone = true;
+                SceneManager.LoadScene("1 Reception");
 			}
 		}
 

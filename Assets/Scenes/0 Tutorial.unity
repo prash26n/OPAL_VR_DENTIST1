@@ -1637,7 +1637,7 @@ RectTransform:
   m_GameObject: {fileID: 416614988}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0.474}
-  m_LocalScale: {x: 0.13656229, y: 0.0042460584, z: 0.13656235}
+  m_LocalScale: {x: 0.19885823, y: 0.0042460584, z: 0.13656235}
   m_Children: []
   m_Father: {fileID: 1496634358}
   m_RootOrder: 0
@@ -1668,10 +1668,10 @@ MonoBehaviour:
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 14
+    m_FontSize: 13
     m_FontStyle: 0
     m_BestFit: 0
-    m_MinSize: 10
+    m_MinSize: 1
     m_MaxSize: 40
     m_Alignment: 4
     m_AlignByGeometry: 0
@@ -1679,11 +1679,11 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "GREAT JOB!\n\nWALKING AROUND IN REAL LIFE WILL ALLOW YOU TO MOVE AROUND
-    DURING THE EXPERIENCE.\n\nYOU CAN ALSO GRAB CERTAIN OBJECTS BY PRESSING THE\n
-    <color=yellow>GRIP BUTTON</color> (YELLOW FINGER).\n\nTRY IT NOW BY <b>MOVING
-    THE <color=red>RED</color> BALL FROM YOUR LEFT TO THE <color=blue>BLUE</color>
-    BOX TO YOUR RIGHT</b>"
+  m_Text: "<b>GREAT JOB!</b>\nWalking around in real life with allow you to move around
+    in the VR world as well.\n\nUSE <b>LEFT JOYSTICK</B> TO MOVE AND <B> RIGHT JOYSTICK
+    </B>TO ROTATE.\n\nYOU CAN ALSO GRAB CERTAIN OBJECTS BY PRESSING THE\n <color=yellow>GRIP
+    BUTTON</color> (YELLOW FINGER).\n\nTRY IT NOW BY <b>MOVING THE <color=red>RED</color>
+    BALL FROM YOUR LEFT TO THE <color=blue>BLUE</color> BOX TO YOUR RIGHT</b>"
 --- !u!222 &416614991
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -5030,7 +5030,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1496634358
 RectTransform:
   m_ObjectHideFlags: 0
@@ -5707,7 +5707,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1778207025
 RectTransform:
   m_ObjectHideFlags: 0
