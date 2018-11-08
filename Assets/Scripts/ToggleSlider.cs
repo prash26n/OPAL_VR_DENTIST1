@@ -13,7 +13,8 @@ public class ToggleSlider : MonoBehaviour {
 	public GameObject tutorialCanvas1;
 	public GameObject tutorialCanvas2;
 	public GameObject tutorialCanvas3;
-	double belowThresholdTimeTutorial;
+    public GameObject tutorialCanvas4;
+    double belowThresholdTimeTutorial;
 	bool belowThresholdTutorial	= true;
 	static public bool stepOne = true;
 	static public bool stepTwo = false;
@@ -152,7 +153,8 @@ public class ToggleSlider : MonoBehaviour {
 				tutorialCanvas1.SetActive(false);
 				tutorialCanvas2.SetActive(true);
 				tutorialCanvas3.SetActive(false);
-				stepTwo	= true;
+                tutorialCanvas4.SetActive(false);
+                stepTwo	= true;
 				stepOne = false;
 				TutorialDone = false;
 			}
@@ -164,7 +166,8 @@ public class ToggleSlider : MonoBehaviour {
 				tutorialCanvas1.SetActive(false);
 				tutorialCanvas2.SetActive(false);
 				tutorialCanvas3.SetActive(true);
-				stepTwo	= false;
+                tutorialCanvas4.SetActive(true);
+                stepTwo	= false;
 				stepOne = false;
 				TutorialDone = true;
 			}
