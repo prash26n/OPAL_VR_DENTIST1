@@ -160,8 +160,6 @@ public class ToggleSlider : MonoBehaviour {
 			}
 		}
 		else if(stepTwo){
-            Debug.Log(tutorialSphere.transform.position);
-
             if (tutorialSphere.isKinematic){
 				tutorialCanvas1.SetActive(false);
 				tutorialCanvas2.SetActive(false);
