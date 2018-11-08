@@ -135,7 +135,7 @@ public class ToggleSlider : MonoBehaviour {
 		}
 		/* 2. Handles disabling canvas if it's active */
 		if(isActive && ConvertToUnixTimestamp(DateTime.Now) - startingtime >= 5){
-        	//canvas.SetActive(false);
+        	canvas.SetActive(false);
         	isActive = false;
 		}
 
