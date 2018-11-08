@@ -779,10 +779,10 @@ MonoBehaviour:
   Driver: {fileID: 176466624}
   Base: {fileID: 454523001}
   Body: {fileID: 840719476}
-  ControllerLeft: {fileID: 0}
-  ControllerRight: {fileID: 0}
-  HandLeft: {fileID: 0}
-  HandRight: {fileID: 0}
+  ControllerLeft: {fileID: 1601575093}
+  ControllerRight: {fileID: 240785551}
+  HandLeft: {fileID: 28767866}
+  HandRight: {fileID: 398720747}
   RecordPackets: 0
   UseSDKPackets: 1
   StartWithControllers: 0
@@ -3085,19 +3085,19 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 775433558}
   m_LocalRotation: {x: 0.10174662, y: 0.03910075, z: -0.004002075, w: 0.99403363}
-  m_LocalPosition: {x: 0, y: 0, z: -4.9716067}
+  m_LocalPosition: {x: 0, y: 0, z: 5.882041}
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_Children:
   - {fileID: 872564868}
   - {fileID: 2085522170}
   - {fileID: 1169950798}
   - {fileID: 1261974554}
-  m_Father: {fileID: 1282382237}
+  m_Father: {fileID: 1270258928}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0.34491822, y: 1.0133967}
+  m_AnchoredPosition: {x: -45.73711, y: 73.89122}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
 --- !u!114 &775433560
@@ -4037,7 +4037,8 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 45.992027, y: -70.12782, z: -10.643789}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
+  m_Children:
+  - {fileID: 775433559}
   m_Father: {fileID: 0}
   m_RootOrder: 25
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -4070,8 +4071,7 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 775433559}
+  m_Children: []
   m_Father: {fileID: 1590068328}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
