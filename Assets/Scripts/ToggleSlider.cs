@@ -73,7 +73,6 @@ public class ToggleSlider : MonoBehaviour {
 			val = maxValue;
 		}
 		sliderText.text = val.ToString();
-        Debug.Log(sliderText.text);
         slider.value = val;
 		isActive = true;
 	}
@@ -87,7 +86,6 @@ public class ToggleSlider : MonoBehaviour {
 			val = minValue;
 		}
 		sliderText.text = val.ToString();
-        Debug.Log(sliderText.text);
         slider.value = val;
 		isActive = true;
 	}
