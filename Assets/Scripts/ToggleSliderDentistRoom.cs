@@ -120,7 +120,7 @@ public class ToggleSliderDentistRoom : MonoBehaviour {
 				
 		if(val <= threshold)
         {
-            SceneManager.LoadScene("1 Reception");
+            SceneManager.LoadScene("4 Patient");
 		}
 		
 	}
