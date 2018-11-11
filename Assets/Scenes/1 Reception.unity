@@ -798,7 +798,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   threshold: 20
-  counter: 0
   sliderText: {fileID: 689440805}
   slider: {fileID: 925145029}
   maxValue: 100
@@ -2409,11 +2408,11 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4457604126727770, guid: 89116400cf56a8b45aa98743fb19d316, type: 2}
       propertyPath: m_RootOrder
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4761657069795892, guid: 89116400cf56a8b45aa98743fb19d316, type: 2}
       propertyPath: m_RootOrder
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 89116400cf56a8b45aa98743fb19d316, type: 2}
@@ -4209,33 +4208,38 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1294518780647630, guid: e5f8e2014262e934887626ceafe42f02, type: 2}
       propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 224047433061837722, guid: e5f8e2014262e934887626ceafe42f02,
+        type: 2}
+      propertyPath: m_AnchorMax.x
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 224047433061837722, guid: e5f8e2014262e934887626ceafe42f02,
         type: 2}
-      propertyPath: m_AnchorMax.x
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 224047433061837722, guid: e5f8e2014262e934887626ceafe42f02,
-        type: 2}
       propertyPath: m_AnchorMax.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 224758077195087932, guid: e5f8e2014262e934887626ceafe42f02,
         type: 2}
       propertyPath: m_AnchorMin.x
-      value: 0.5
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 224758077195087932, guid: e5f8e2014262e934887626ceafe42f02,
         type: 2}
       propertyPath: m_AnchorMax.x
-      value: 0.5
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 224758077195087932, guid: e5f8e2014262e934887626ceafe42f02,
         type: 2}
       propertyPath: m_AnchorMax.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 223085906646888124, guid: e5f8e2014262e934887626ceafe42f02,
+        type: 2}
+      propertyPath: m_Camera
+      value: 
+      objectReference: {fileID: 711910559}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: e5f8e2014262e934887626ceafe42f02, type: 2}
   m_IsPrefabParent: 0
