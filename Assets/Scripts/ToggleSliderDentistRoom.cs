@@ -42,13 +42,15 @@ public class ToggleSliderDentistRoom : MonoBehaviour {
 	double heldTimeB;
 	double belowThresholdTime;
 	bool belowThreshold = false;
-
+    bool hasIntroduced = false;
 	public Scene scene;
 
+    Animator anim;
+    int SayHi = Animator.StringToHash("Jump");
 
 
-	//note to future self: Learn about C#'s Time.time
-	public static double ConvertToUnixTimestamp(DateTime date){
+    //note to future self: Learn about C#'s Time.time
+    public static double ConvertToUnixTimestamp(DateTime date){
 	    DateTime origin = new DateTime(1970, 1, 1, 0, 0, 0, 0, DateTimeKind.Utc);
 	    TimeSpan diff = date.ToUniversalTime() - origin;
 	    return Math.Floor(diff.TotalSeconds);
@@ -84,10 +86,19 @@ public class ToggleSliderDentistRoom : MonoBehaviour {
 	void Start () {	
 		slider.value = 50;
 		belowThresholdTutorial	= true;
-	}
+        anim = GetComponent<Animator>();
+    }
 
-	// Update is called once per frame
-	void Update () {
+    void OnTriggerEnter(Collider other)
+    {
+           if(other.gameObject.tag == "change scene")
+        {
+            anim.Play(SayHi);
+        }
+    }
+
+    // Update is called once per frame
+    void Update () {
 		GlobalVariables.sliderValue = slider.value;
 		//keyboard shortcuts to manipulate anxiety slider
 		if(Input.GetKey("1")){
@@ -96,6 +107,11 @@ public class ToggleSliderDentistRoom : MonoBehaviour {
 		if(Input.GetKey("2")){
 			toggleAndDecrement();
 		}
+
+        void OnTriggerEnter(Collider other)
+    {
+        Destroy(other.gameObject);
+    }
 
 
 		/* 1. Handles Oculus touch input and incrementing/decrementing anxiety value */
