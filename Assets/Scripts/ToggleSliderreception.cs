@@ -18,7 +18,7 @@ public class ToggleSliderreception : MonoBehaviour
     static public bool TutorialDone = false;
     static public bool done = false;
     public int threshold = 20;
-    public int counter = 0;
+    public static int counter = 0;
 
     //anxiety slider text
     public Text sliderText;
@@ -141,11 +141,13 @@ public class ToggleSliderreception : MonoBehaviour
         {
             if (counter == 0)
             {
-                SceneManager.LoadScene("2 X Ray Room");
+                counter++;
+                SceneManager.LoadScene("2 X Ray Room")
 
             }
             else
             {
+                counter--;
                 SceneManager.LoadScene("3 Dentist Room");
          
             }
