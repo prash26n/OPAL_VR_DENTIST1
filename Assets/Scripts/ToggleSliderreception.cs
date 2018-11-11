@@ -142,7 +142,7 @@ public class ToggleSliderreception : MonoBehaviour
             if (counter == 0)
             {
                 counter++;
-                SceneManager.LoadScene("2 X Ray Room")
+                SceneManager.LoadScene("2 X Ray Room");
 
             }
             else
