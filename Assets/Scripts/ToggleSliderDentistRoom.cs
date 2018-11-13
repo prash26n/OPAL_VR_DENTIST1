@@ -108,12 +108,6 @@ public class ToggleSliderDentistRoom : MonoBehaviour {
 			toggleAndDecrement();
 		}
 
-        void OnTriggerEnter(Collider other)
-    {
-        Destroy(other.gameObject);
-    }
-
-
 		/* 1. Handles Oculus touch input and incrementing/decrementing anxiety value */
 		if(OVRInput.GetDown(OVRInput.Button.One)){
 			heldTimeA = ConvertToUnixTimestamp(DateTime.Now);
