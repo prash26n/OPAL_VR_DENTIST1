@@ -8,7 +8,8 @@ public class DisplaySlider : MonoBehaviour {
     showTrigger triggerObject;
 
     void Start () {
-         triggerObject = GameObject.Find("Trigger").GetComponent<showTrigger>();
+        triggerObject = GameObject.Find("Trigger").GetComponent<showTrigger>();
+        triggerObject.hide();
     }
 	
 	// Update is called once per frame

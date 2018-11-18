@@ -11,7 +11,7 @@ public class showTrigger : MonoBehaviour {
         //rend = GetComponent<Renderer>();
         //rend.enabled = false;
         Debug.Log("trigger script  START called");
-        this.gameObject.SetActive(false);
+        //this.gameObject.SetActive(false);
     }
 	
 	// Update is called once per frame
@@ -23,10 +23,13 @@ public class showTrigger : MonoBehaviour {
     {
         Debug.Log("trigger script called");
         //StartCoroutine(ShowAndHide()); // 1 second
-       // rend.enabled = true;
+        // rend.enabled = true;
         this.gameObject.SetActive(true);
+    }
 
-
+    public void hide()
+    {
+        this.gameObject.SetActive(false);
     }
 
 }
