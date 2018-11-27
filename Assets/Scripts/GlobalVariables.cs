@@ -9,7 +9,7 @@ public static class GlobalVariables
 {
 
     //Initialize array of scenes here:
-   public static string[] scenes = {"1 Reception", "2 X Ray Room", "3 Dentist Room", "5. temp"};
+   public static string[] scenes = {"1 Reception", "2 X Ray Room", "3 Dentist Room", "4 Patient" };
 
     //strPath holds path to user's desktop
     private static string strPath = Environment.GetFolderPath(

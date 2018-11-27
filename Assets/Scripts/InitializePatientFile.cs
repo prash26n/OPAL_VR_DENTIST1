@@ -26,7 +26,7 @@ public class InitializePatientFile : MonoBehaviour {
 	 		GlobalVariables.Patientname = patientName;
 	 		System.IO.File.WriteAllText(patientFile, 
 	 									"Patient's Name:,"+patientName+",,\n" + ",,,\n" + "Description,Time,Scene,Anxiety Level");
-			SceneManager.LoadScene("Welcome");
+			SceneManager.LoadScene("0 Tutorial");
 		}
 	}
 }

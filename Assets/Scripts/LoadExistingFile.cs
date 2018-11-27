@@ -32,7 +32,7 @@ public class LoadExistingFile : MonoBehaviour {
 				char[] splitchar = { ',' };
 				GlobalVariables.existingSceneOrder = scenes.Split(splitchar);
 				//initialize sceneorder array
-				SceneManager.LoadScene("Tutorial");
+				SceneManager.LoadScene("0 Tutorial");
 			}
 			else{
 				error.text = "Error: Patient file not found. Please make sure the patient's save file is in the OPAL_Testing directory on the desktop, and try again.";

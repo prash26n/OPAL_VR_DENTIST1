@@ -173,8 +173,8 @@ public class ToggleSlider : MonoBehaviour {
 		}
 		if(TutorialDone){
 			if(val <= 0){
-				GlobalVariables.tutorialDone = true;
-                SceneManager.LoadScene("1 Reception");
+                    GlobalVariables.startTime = Math.Floor(Time.time);
+                    SceneManager.LoadScene("1 Reception");
 			}
 		}
 
