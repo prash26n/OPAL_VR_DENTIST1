@@ -1273,7 +1273,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Feel Free to Look Around X-Ray Room and Dentist Room
+  m_Text: Feel Free to Look Around the X-Ray Room
 --- !u!222 &943930151
 CanvasRenderer:
   m_ObjectHideFlags: 0
