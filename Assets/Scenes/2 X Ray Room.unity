@@ -1238,7 +1238,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 160, y: 50}
+  m_SizeDelta: {x: 160, y: 70}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &943930150
 MonoBehaviour:
@@ -1273,7 +1273,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Feel Free to Look Around the X-Ray Room
+  m_Text: "Another patient  is getting an X ray. \nFeel Free to Look Around "
 --- !u!222 &943930151
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2685,7 +2685,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1645582095
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2812,7 +2812,7 @@ RectTransform:
   m_GameObject: {fileID: 1649602597}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1.43488, y: 1.43488, z: 1.43488}
+  m_LocalScale: {x: 1.43488, y: 1.96, z: 1.43488}
   m_Children: []
   m_Father: {fileID: 1049993456}
   m_RootOrder: 0
