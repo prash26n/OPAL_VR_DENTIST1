@@ -6,7 +6,7 @@ using System;
 using System.Linq;
 using UnityEngine.SceneManagement;
 
-public class ToggleSliderreception : MonoBehaviour
+public class ToggleSliderFinal : MonoBehaviour
 {
 
     /* Global variables needed for Tutorial scene */
@@ -18,7 +18,6 @@ public class ToggleSliderreception : MonoBehaviour
     static public bool TutorialDone = false;
     static public bool done = false;
     public int threshold = 20;
-    public static int counter = 0;
 
     //anxiety slider text
     public Text sliderText;
@@ -44,9 +43,11 @@ public class ToggleSliderreception : MonoBehaviour
     double heldTimeB;
     double belowThresholdTime;
     bool belowThreshold = false;
-
+    bool hasIntroduced = false;
     public Scene scene;
 
+    Animator anim;
+    int SayHi = Animator.StringToHash("Jump");
 
 
     //note to future self: Learn about C#'s Time.time
@@ -87,6 +88,54 @@ public class ToggleSliderreception : MonoBehaviour
         slider.value = val;
         isActive = true;
     }
+    public string[] orderByHierarchy(string[] scenes)
+    {
+        string lowestscene = scenes[0];
+        string[] f = new string[GlobalVariables.Scenes.Length];
+        char temp = lowestscene[0];
+        int count = 0;
+        if (Char.ToLower(temp).Equals('c'))
+        {
+            //grab all cheese and put at start of array, then apple
+            foreach (string i in scenes)
+            {
+                if (Char.ToLower(i[0]).Equals('c'))
+                {
+                    f[count] = i;
+                    count++;
+                }
+            }
+            foreach (string i in scenes)
+            {
+                if (Char.ToLower(i[0]).Equals('a'))
+                {
+                    f[count] = i;
+                    count++;
+                }
+            }
+        }
+        else
+        {
+            //grab all apple and put at start of array, then cheese
+            foreach (string i in scenes)
+            {
+                if (Char.ToLower(i[0]).Equals('a'))
+                {
+                    f[count] = i;
+                    count++;
+                }
+            }
+            foreach (string i in scenes)
+            {
+                if (Char.ToLower(i[0]).Equals('c'))
+                {
+                    f[count] = i;
+                    count++;
+                }
+            }
+        }
+        return f;
+    }
 
 
     // Use this for initialization
@@ -94,6 +143,15 @@ public class ToggleSliderreception : MonoBehaviour
     {
         slider.value = 50;
         belowThresholdTutorial = true;
+        anim = GetComponent<Animator>();
+    }
+
+    void OnTriggerEnter(Collider other)
+    {
+        if (other.gameObject.tag == "change scene")
+        {
+            anim.Play(SayHi);
+        }
     }
 
     // Update is called once per frame
@@ -109,7 +167,6 @@ public class ToggleSliderreception : MonoBehaviour
         {
             toggleAndDecrement();
         }
-
 
         /* 1. Handles Oculus touch input and incrementing/decrementing anxiety value */
         if (OVRInput.GetDown(OVRInput.Button.One))
@@ -140,24 +197,13 @@ public class ToggleSliderreception : MonoBehaviour
         if (val <= threshold)
         {
             GlobalVariables.sliderValue = val;
-            if (counter == 0)
-            {
-                GlobalFunction.LogToPatientFile(GlobalVariables.Filename, "Reception before x-ray", "Final", Math.Floor(Time.time - GlobalVariables.startTime), GlobalVariables.sliderValue);
-                GlobalVariables.scenesRank.Add("Reception before x-ray", GlobalVariables.sliderValue);
-
-                counter++;
-                SceneManager.LoadScene("2 X Ray Room");
-
-            }
-            else
-            {
-                GlobalFunction.LogToPatientFile(GlobalVariables.Filename, "Reception after x-ray", "Final", Math.Floor(Time.time - GlobalVariables.startTime), GlobalVariables.sliderValue);
-                GlobalVariables.scenesRank.Add("Reception after x-ray", GlobalVariables.sliderValue);
-                counter--;
-                SceneManager.LoadScene("3 Dentist Room");
-         
-            }
+            GlobalVariables.scenesRank = GlobalFunction.sortSceneRankings(GlobalVariables.scenesRank);
+            string[] finalsceneorder = GlobalVariables.scenesRank.Keys.ToArray();
+            finalsceneorder = orderByHierarchy(finalsceneorder);
+            GlobalFunction.initializeSaveFile(GlobalVariables.savefilename, GlobalVariables.Patientname, finalsceneorder, 0);
+            SceneManager.LoadScene("1 Reception");
         }
+
     }
 
 }
