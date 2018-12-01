@@ -35,7 +35,7 @@ public class LoadExistingFile : MonoBehaviour {
 				SceneManager.LoadScene("0 Tutorial");
 			}
 			else{
-				error.text = "Error: Patient file not found. Please make sure the patient's save file is in the OPAL_Testing directory on the desktop, and try again.";
+				error.text = "Error: Patient file not found. ";
 			}
 		}
 	}
