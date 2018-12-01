@@ -198,7 +198,7 @@ public class ToggleSliderFinal : MonoBehaviour
         {
             GlobalVariables.sliderValue = val;
             GlobalFunction.LogToPatientFile(GlobalVariables.Filename, "First Person dentist room", "Final", Math.Floor(Time.time - GlobalVariables.startTime), GlobalVariables.sliderValue);
-            GlobalVariables.scenesRank.Add(scene.name, GlobalVariables.sliderValue);
+            GlobalVariables.scenesRank.Add("First Person dentist room", GlobalVariables.sliderValue);
             GlobalVariables.scenesRank = GlobalFunction.sortSceneRankings(GlobalVariables.scenesRank);
             string[] finalsceneorder = GlobalVariables.scenesRank.Keys.ToArray();
             finalsceneorder = orderByHierarchy(finalsceneorder);

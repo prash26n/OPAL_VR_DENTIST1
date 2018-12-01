@@ -132,7 +132,7 @@ public class ToggleSliderDentistRoom : MonoBehaviour {
         {
             GlobalVariables.sliderValue = val;
             GlobalFunction.LogToPatientFile(GlobalVariables.Filename, "Another patient Dentist room", "Final", Math.Floor(Time.time - GlobalVariables.startTime), GlobalVariables.sliderValue);
-            GlobalVariables.scenesRank.Add(scene.name, GlobalVariables.sliderValue);
+            GlobalVariables.scenesRank.Add("Another patient Dentist room", GlobalVariables.sliderValue);
             SceneManager.LoadScene("4 Patient");
 		}
 		

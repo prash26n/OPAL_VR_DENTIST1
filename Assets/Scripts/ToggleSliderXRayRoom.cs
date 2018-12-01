@@ -140,7 +140,7 @@ public class ToggleSliderXRayRoom : MonoBehaviour
         {
             GlobalVariables.sliderValue = val;
             GlobalFunction.LogToPatientFile(GlobalVariables.Filename, "X-ray", "Final", Math.Floor(Time.time - GlobalVariables.startTime), GlobalVariables.sliderValue);
-            GlobalVariables.scenesRank.Add(scene.name, GlobalVariables.sliderValue);
+            GlobalVariables.scenesRank.Add("X-ray", GlobalVariables.sliderValue);
             SceneManager.LoadScene("1 Reception");
         }
 
