@@ -8,7 +8,7 @@ public class DisplaySlider : MonoBehaviour {
     showTrigger triggerObject;
 
     void Start () {
-        triggerObject = GameObject.Find("Trigger").GetComponent<showTrigger>();
+        triggerObject = GameObject.Find("Trigger_2").GetComponent<showTrigger>();
         triggerObject.hide();
     }
 	
