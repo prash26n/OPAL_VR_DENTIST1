@@ -6,6 +6,15 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Scenes/Main menu.unity
+    guid: 72fcd99b5d71453429e28b5010ef5ecf
+  - enabled: 1
+    path: Assets/Scenes/NewStart.unity
+    guid: 0763fed08d826954ab850d022d5991e0
+  - enabled: 1
+    path: Assets/Scenes/existingStart.unity
+    guid: 995f42443e15ca245aa799e595926316
+  - enabled: 1
     path: Assets/Scenes/0 Tutorial.unity
     guid: d1686faf3ef922f4d98b8ef6995059af
   - enabled: 1
@@ -17,6 +26,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/3 Dentist Room.unity
     guid: be8e62ce82b5c7b4db1847e4e4cdebe9
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
   - enabled: 1
     path: Assets/Scenes/4 Patient.unity
-    guid: 2b8a40c9b74424c47a976834d6a95561
+    guid: c93708e39f0b1b24c8fe364304b13816

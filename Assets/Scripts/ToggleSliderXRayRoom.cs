@@ -139,7 +139,7 @@ public class ToggleSliderXRayRoom : MonoBehaviour
         if (val <= threshold)
         {
             GlobalVariables.sliderValue = val;
-            GlobalFunction.LogToPatientFile(GlobalVariables.Filename, scene.name, "Final", Math.Floor(Time.time - GlobalVariables.startTime), GlobalVariables.sliderValue);
+            GlobalFunction.LogToPatientFile(GlobalVariables.Filename, "X-ray", "Final", Math.Floor(Time.time - GlobalVariables.startTime), GlobalVariables.sliderValue);
             GlobalVariables.scenesRank.Add(scene.name, GlobalVariables.sliderValue);
             SceneManager.LoadScene("1 Reception");
         }
