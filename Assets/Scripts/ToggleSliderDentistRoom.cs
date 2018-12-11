@@ -113,14 +113,12 @@ public class ToggleSliderDentistRoom : MonoBehaviour {
 			heldTimeA = ConvertToUnixTimestamp(DateTime.Now);
             GlobalVariables.sliderValue = val;
             GlobalFunction.LogToPatientFile(GlobalVariables.Filename, "Another patient Dentist room", "Final", Math.Floor(Time.time - GlobalVariables.startTime), GlobalVariables.sliderValue);
-            GlobalVariables.scenesRank.Add("Another patient Dentist room", GlobalVariables.sliderValue);
             toggleAndIncrement();
 		}
 		else if(OVRInput.Get(OVRInput.Button.One)){
 			if(ConvertToUnixTimestamp(DateTime.Now) - heldTimeA >= .75){
                 GlobalVariables.sliderValue = val;
                 GlobalFunction.LogToPatientFile(GlobalVariables.Filename, "Another patient Dentist room", "Final", Math.Floor(Time.time - GlobalVariables.startTime), GlobalVariables.sliderValue);
-                GlobalVariables.scenesRank.Add("Another patient Dentist room", GlobalVariables.sliderValue);
                 toggleAndIncrement();
 			}
 		}
@@ -128,21 +126,19 @@ public class ToggleSliderDentistRoom : MonoBehaviour {
 			heldTimeB = ConvertToUnixTimestamp(DateTime.Now);
             GlobalVariables.sliderValue = val;
             GlobalFunction.LogToPatientFile(GlobalVariables.Filename, "Another patient Dentist room", "Final", Math.Floor(Time.time - GlobalVariables.startTime), GlobalVariables.sliderValue);
-            GlobalVariables.scenesRank.Add("Another patient Dentist room", GlobalVariables.sliderValue);
             toggleAndDecrement();
 		}
 		else if(OVRInput.Get(OVRInput.Button.Two)){
 			if(ConvertToUnixTimestamp(DateTime.Now) - heldTimeB >= .75){
                 GlobalVariables.sliderValue = val;
                 GlobalFunction.LogToPatientFile(GlobalVariables.Filename, "Another patient Dentist room", "Final", Math.Floor(Time.time - GlobalVariables.startTime), GlobalVariables.sliderValue);
-                GlobalVariables.scenesRank.Add("Another patient Dentist room", GlobalVariables.sliderValue);
                 toggleAndDecrement();
 			}
 		}
 				
 		if(val <= threshold)
         {
-
+            GlobalVariables.scenesRank.Add("Another patient Dentist room", GlobalVariables.sliderValue);
             SceneManager.LoadScene("4 Patient");
 		}
 		

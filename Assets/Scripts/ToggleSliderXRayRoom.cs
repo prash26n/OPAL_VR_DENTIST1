@@ -116,7 +116,6 @@ public class ToggleSliderXRayRoom : MonoBehaviour
             heldTimeA = ConvertToUnixTimestamp(DateTime.Now);
             GlobalVariables.sliderValue = val;
             GlobalFunction.LogToPatientFile(GlobalVariables.Filename, "X-ray", "Final", Math.Floor(Time.time - GlobalVariables.startTime), GlobalVariables.sliderValue);
-            GlobalVariables.scenesRank.Add("X-ray", GlobalVariables.sliderValue);
             toggleAndIncrement();
         }
         else if (OVRInput.Get(OVRInput.Button.One))
@@ -125,7 +124,6 @@ public class ToggleSliderXRayRoom : MonoBehaviour
             {
                 GlobalVariables.sliderValue = val;
                 GlobalFunction.LogToPatientFile(GlobalVariables.Filename, "X-ray", "Final", Math.Floor(Time.time - GlobalVariables.startTime), GlobalVariables.sliderValue);
-                GlobalVariables.scenesRank.Add("X-ray", GlobalVariables.sliderValue);
                 toggleAndIncrement();
             }
         }
@@ -134,7 +132,6 @@ public class ToggleSliderXRayRoom : MonoBehaviour
             heldTimeB = ConvertToUnixTimestamp(DateTime.Now);
             GlobalVariables.sliderValue = val;
             GlobalFunction.LogToPatientFile(GlobalVariables.Filename, "X-ray", "Final", Math.Floor(Time.time - GlobalVariables.startTime), GlobalVariables.sliderValue);
-            GlobalVariables.scenesRank.Add("X-ray", GlobalVariables.sliderValue);
             toggleAndDecrement();
         }
         else if (OVRInput.Get(OVRInput.Button.Two))
@@ -143,13 +140,13 @@ public class ToggleSliderXRayRoom : MonoBehaviour
             {
                 GlobalVariables.sliderValue = val;
                 GlobalFunction.LogToPatientFile(GlobalVariables.Filename, "X-ray", "Final", Math.Floor(Time.time - GlobalVariables.startTime), GlobalVariables.sliderValue);
-                GlobalVariables.scenesRank.Add("X-ray", GlobalVariables.sliderValue);
                 toggleAndDecrement();
             }
         }
 
         if (val <= threshold)
         {
+            GlobalVariables.scenesRank.Add("X-Ray", GlobalVariables.sliderValue);
             SceneManager.LoadScene("1 Reception");
         }
 

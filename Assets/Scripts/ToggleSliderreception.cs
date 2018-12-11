@@ -119,13 +119,11 @@ public class ToggleSliderreception : MonoBehaviour
             {
                 GlobalVariables.sliderValue = val;
                 GlobalFunction.LogToPatientFile(GlobalVariables.Filename, "Reception before x-ray", "Final", Math.Floor(Time.time - GlobalVariables.startTime), GlobalVariables.sliderValue);
-                GlobalVariables.scenesRank.Add("Reception before x-ray", GlobalVariables.sliderValue);
             }
             else
             {
                 GlobalVariables.sliderValue = val;
                 GlobalFunction.LogToPatientFile(GlobalVariables.Filename, "Reception after x-ray", "Final", Math.Floor(Time.time - GlobalVariables.startTime), GlobalVariables.sliderValue);
-                GlobalVariables.scenesRank.Add("Reception after x-ray", GlobalVariables.sliderValue);
             }
             toggleAndIncrement();
         }
@@ -137,13 +135,11 @@ public class ToggleSliderreception : MonoBehaviour
                 {
                     GlobalVariables.sliderValue = val;
                     GlobalFunction.LogToPatientFile(GlobalVariables.Filename, "Reception before x-ray", "Final", Math.Floor(Time.time - GlobalVariables.startTime), GlobalVariables.sliderValue);
-                    GlobalVariables.scenesRank.Add("Reception before x-ray", GlobalVariables.sliderValue);
                 }
                 else
                 {
                     GlobalVariables.sliderValue = val;
                     GlobalFunction.LogToPatientFile(GlobalVariables.Filename, "Reception after x-ray", "Final", Math.Floor(Time.time - GlobalVariables.startTime), GlobalVariables.sliderValue);
-                    GlobalVariables.scenesRank.Add("Reception after x-ray", GlobalVariables.sliderValue);
                 }
                 toggleAndIncrement();
             }
@@ -155,13 +151,11 @@ public class ToggleSliderreception : MonoBehaviour
             {
                 GlobalVariables.sliderValue = val;
                 GlobalFunction.LogToPatientFile(GlobalVariables.Filename, "Reception before x-ray", "Final", Math.Floor(Time.time - GlobalVariables.startTime), GlobalVariables.sliderValue);
-                GlobalVariables.scenesRank.Add("Reception before x-ray", GlobalVariables.sliderValue);
             }
             else
             {
                 GlobalVariables.sliderValue = val;
                 GlobalFunction.LogToPatientFile(GlobalVariables.Filename, "Reception after x-ray", "Final", Math.Floor(Time.time - GlobalVariables.startTime), GlobalVariables.sliderValue);
-                GlobalVariables.scenesRank.Add("Reception after x-ray", GlobalVariables.sliderValue);
             }
             toggleAndDecrement();
         }
@@ -173,13 +167,11 @@ public class ToggleSliderreception : MonoBehaviour
                 {
                     GlobalVariables.sliderValue = val;
                     GlobalFunction.LogToPatientFile(GlobalVariables.Filename, "Reception before x-ray", "Final", Math.Floor(Time.time - GlobalVariables.startTime), GlobalVariables.sliderValue);
-                    GlobalVariables.scenesRank.Add("Reception before x-ray", GlobalVariables.sliderValue);
                 }
                 else
                 {
                     GlobalVariables.sliderValue = val;
                     GlobalFunction.LogToPatientFile(GlobalVariables.Filename, "Reception after x-ray", "Final", Math.Floor(Time.time - GlobalVariables.startTime), GlobalVariables.sliderValue);
-                    GlobalVariables.scenesRank.Add("Reception after x-ray", GlobalVariables.sliderValue);
                 }
                 toggleAndDecrement();
             }
@@ -189,11 +181,14 @@ public class ToggleSliderreception : MonoBehaviour
         {
             if (counter == 0)
             {
+                GlobalVariables.scenesRank.Add("Reception before x-ray", GlobalVariables.sliderValue);
                 counter++;
+                val = 50;
                 SceneManager.LoadScene("2 X Ray Room");
             }
             else
             {
+                GlobalVariables.scenesRank.Add("Reception after x-ray", GlobalVariables.sliderValue);
                 counter--;
                 SceneManager.LoadScene("3 Dentist Room");
             }
