@@ -13,6 +13,12 @@
 ### Scene 2  
   User then enters the X Ray room scene, sees a another patient getting an X ray, waits for their turn. 
   User needs to rate their Anxiety Level below 20 to change scene
+### Scene 3 
+  User then goes back to Reception and moves forward to next Scene which is Dentist Room, sees another patient being treated by a Dentist, and waits for their turn. 
+### Scene 4 
+  User then moves forward to the next scene where Users gets examined by the Dentist. He looks around the Dentist room , and dentist says to open his mouth.  
+### Scene 5 
+User returns to the Reception and the scene ends. 
   
 ## Models/Resources sources
 
