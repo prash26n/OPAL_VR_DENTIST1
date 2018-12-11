@@ -172,24 +172,32 @@ public class ToggleSliderFinal : MonoBehaviour
         if (OVRInput.GetDown(OVRInput.Button.One))
         {
             heldTimeA = ConvertToUnixTimestamp(DateTime.Now);
+            GlobalVariables.sliderValue = val;
+            GlobalFunction.LogToPatientFile(GlobalVariables.Filename, "First Person dentist room", "Final", Math.Floor(Time.time - GlobalVariables.startTime), GlobalVariables.sliderValue);
             toggleAndIncrement();
         }
         else if (OVRInput.Get(OVRInput.Button.One))
         {
             if (ConvertToUnixTimestamp(DateTime.Now) - heldTimeA >= .75)
             {
+                GlobalVariables.sliderValue = val;
+                GlobalFunction.LogToPatientFile(GlobalVariables.Filename, "First Person dentist room", "Final", Math.Floor(Time.time - GlobalVariables.startTime), GlobalVariables.sliderValue);
                 toggleAndIncrement();
             }
         }
         if (OVRInput.GetDown(OVRInput.Button.Two))
         {
             heldTimeB = ConvertToUnixTimestamp(DateTime.Now);
+            GlobalVariables.sliderValue = val;
+            GlobalFunction.LogToPatientFile(GlobalVariables.Filename, "First Person dentist room", "Final", Math.Floor(Time.time - GlobalVariables.startTime), GlobalVariables.sliderValue);
             toggleAndDecrement();
         }
         else if (OVRInput.Get(OVRInput.Button.Two))
         {
             if (ConvertToUnixTimestamp(DateTime.Now) - heldTimeB >= .75)
             {
+                GlobalVariables.sliderValue = val;
+                GlobalFunction.LogToPatientFile(GlobalVariables.Filename, "First Person dentist room", "Final", Math.Floor(Time.time - GlobalVariables.startTime), GlobalVariables.sliderValue);
                 toggleAndDecrement();
             }
         }
@@ -199,7 +207,6 @@ public class ToggleSliderFinal : MonoBehaviour
             GlobalVariables.sliderValue = val;
             GlobalFunction.LogToPatientFile(GlobalVariables.Filename, "First Person dentist room", "Final", Math.Floor(Time.time - GlobalVariables.startTime), GlobalVariables.sliderValue);
             GlobalVariables.scenesRank.Add("First Person dentist room", GlobalVariables.sliderValue);
-            GlobalVariables.scenesRank = GlobalFunction.sortSceneRankings(GlobalVariables.scenesRank);
             string[] finalsceneorder = GlobalVariables.scenesRank.Keys.ToArray();
             finalsceneorder = orderByHierarchy(finalsceneorder);
             GlobalFunction.initializeSaveFile(GlobalVariables.savefilename, GlobalVariables.Patientname, finalsceneorder, 0);

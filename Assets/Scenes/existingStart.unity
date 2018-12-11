@@ -889,8 +889,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_MethodName: StartPatientFile
+      - m_Target: {fileID: 655742950}
+        m_MethodName: loadFile
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

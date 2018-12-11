@@ -111,28 +111,38 @@ public class ToggleSliderDentistRoom : MonoBehaviour {
 		/* 1. Handles Oculus touch input and incrementing/decrementing anxiety value */
 		if(OVRInput.GetDown(OVRInput.Button.One)){
 			heldTimeA = ConvertToUnixTimestamp(DateTime.Now);
-			toggleAndIncrement();
+            GlobalVariables.sliderValue = val;
+            GlobalFunction.LogToPatientFile(GlobalVariables.Filename, "Another patient Dentist room", "Final", Math.Floor(Time.time - GlobalVariables.startTime), GlobalVariables.sliderValue);
+            GlobalVariables.scenesRank.Add("Another patient Dentist room", GlobalVariables.sliderValue);
+            toggleAndIncrement();
 		}
 		else if(OVRInput.Get(OVRInput.Button.One)){
 			if(ConvertToUnixTimestamp(DateTime.Now) - heldTimeA >= .75){
-				toggleAndIncrement();
+                GlobalVariables.sliderValue = val;
+                GlobalFunction.LogToPatientFile(GlobalVariables.Filename, "Another patient Dentist room", "Final", Math.Floor(Time.time - GlobalVariables.startTime), GlobalVariables.sliderValue);
+                GlobalVariables.scenesRank.Add("Another patient Dentist room", GlobalVariables.sliderValue);
+                toggleAndIncrement();
 			}
 		}
 		if(OVRInput.GetDown(OVRInput.Button.Two)){
 			heldTimeB = ConvertToUnixTimestamp(DateTime.Now);
-			toggleAndDecrement();
+            GlobalVariables.sliderValue = val;
+            GlobalFunction.LogToPatientFile(GlobalVariables.Filename, "Another patient Dentist room", "Final", Math.Floor(Time.time - GlobalVariables.startTime), GlobalVariables.sliderValue);
+            GlobalVariables.scenesRank.Add("Another patient Dentist room", GlobalVariables.sliderValue);
+            toggleAndDecrement();
 		}
 		else if(OVRInput.Get(OVRInput.Button.Two)){
 			if(ConvertToUnixTimestamp(DateTime.Now) - heldTimeB >= .75){
-				toggleAndDecrement();
+                GlobalVariables.sliderValue = val;
+                GlobalFunction.LogToPatientFile(GlobalVariables.Filename, "Another patient Dentist room", "Final", Math.Floor(Time.time - GlobalVariables.startTime), GlobalVariables.sliderValue);
+                GlobalVariables.scenesRank.Add("Another patient Dentist room", GlobalVariables.sliderValue);
+                toggleAndDecrement();
 			}
 		}
 				
 		if(val <= threshold)
         {
-            GlobalVariables.sliderValue = val;
-            GlobalFunction.LogToPatientFile(GlobalVariables.Filename, "Another patient Dentist room", "Final", Math.Floor(Time.time - GlobalVariables.startTime), GlobalVariables.sliderValue);
-            GlobalVariables.scenesRank.Add("Another patient Dentist room", GlobalVariables.sliderValue);
+
             SceneManager.LoadScene("4 Patient");
 		}
 		

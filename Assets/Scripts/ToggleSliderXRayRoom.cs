@@ -114,33 +114,42 @@ public class ToggleSliderXRayRoom : MonoBehaviour
         if (OVRInput.GetDown(OVRInput.Button.One))
         {
             heldTimeA = ConvertToUnixTimestamp(DateTime.Now);
+            GlobalVariables.sliderValue = val;
+            GlobalFunction.LogToPatientFile(GlobalVariables.Filename, "X-ray", "Final", Math.Floor(Time.time - GlobalVariables.startTime), GlobalVariables.sliderValue);
+            GlobalVariables.scenesRank.Add("X-ray", GlobalVariables.sliderValue);
             toggleAndIncrement();
         }
         else if (OVRInput.Get(OVRInput.Button.One))
         {
             if (ConvertToUnixTimestamp(DateTime.Now) - heldTimeA >= .75)
             {
+                GlobalVariables.sliderValue = val;
+                GlobalFunction.LogToPatientFile(GlobalVariables.Filename, "X-ray", "Final", Math.Floor(Time.time - GlobalVariables.startTime), GlobalVariables.sliderValue);
+                GlobalVariables.scenesRank.Add("X-ray", GlobalVariables.sliderValue);
                 toggleAndIncrement();
             }
         }
         if (OVRInput.GetDown(OVRInput.Button.Two))
         {
             heldTimeB = ConvertToUnixTimestamp(DateTime.Now);
+            GlobalVariables.sliderValue = val;
+            GlobalFunction.LogToPatientFile(GlobalVariables.Filename, "X-ray", "Final", Math.Floor(Time.time - GlobalVariables.startTime), GlobalVariables.sliderValue);
+            GlobalVariables.scenesRank.Add("X-ray", GlobalVariables.sliderValue);
             toggleAndDecrement();
         }
         else if (OVRInput.Get(OVRInput.Button.Two))
         {
             if (ConvertToUnixTimestamp(DateTime.Now) - heldTimeB >= .75)
             {
+                GlobalVariables.sliderValue = val;
+                GlobalFunction.LogToPatientFile(GlobalVariables.Filename, "X-ray", "Final", Math.Floor(Time.time - GlobalVariables.startTime), GlobalVariables.sliderValue);
+                GlobalVariables.scenesRank.Add("X-ray", GlobalVariables.sliderValue);
                 toggleAndDecrement();
             }
         }
 
         if (val <= threshold)
         {
-            GlobalVariables.sliderValue = val;
-            GlobalFunction.LogToPatientFile(GlobalVariables.Filename, "X-ray", "Final", Math.Floor(Time.time - GlobalVariables.startTime), GlobalVariables.sliderValue);
-            GlobalVariables.scenesRank.Add("X-ray", GlobalVariables.sliderValue);
             SceneManager.LoadScene("1 Reception");
         }
 
