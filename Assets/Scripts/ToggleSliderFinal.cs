@@ -210,7 +210,7 @@ public class ToggleSliderFinal : MonoBehaviour
             string[] finalsceneorder = GlobalVariables.scenesRank.Keys.ToArray();
             finalsceneorder = orderByHierarchy(finalsceneorder);
             GlobalFunction.initializeSaveFile(GlobalVariables.savefilename, GlobalVariables.Patientname, finalsceneorder, 0);
-            SceneManager.LoadScene("1 Reception");
+            Application.Quit();
         }
 
     }
